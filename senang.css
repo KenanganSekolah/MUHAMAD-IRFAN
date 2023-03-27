@@ -1,0 +1,51 @@
+.h2 {
+	text-align: center;
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+/* Style untuk label pada form */
+.label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/* Style untuk input field pada form */
+.input[type="text"],
+.input[type="email"],
+.textarea {
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	resize: none;
+	width: 100%;
+}
+
+/* Style untuk submit button pada form */
+.input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* Style untuk submit button pada hover state */
+.input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+/* Style responsif untuk form */
+@media screen and (max-width: 600px) {
+	.input[type="text"],
+	.input[type="email"],
+	.textarea {
+		width: 100%;
+	}
+	
+	.input[type="submit"] {
+		width: 100%;
+	}
+}

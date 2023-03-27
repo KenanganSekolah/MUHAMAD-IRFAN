@@ -1,0 +1,181 @@
+/*? global clearing */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+body {
+    background: url('') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #ffffff33;
+    color: #ffffff;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #3333;
+    color: rgb(0, 0, 0);
+}
+
+nav a.active {
+    background-color: crimson;
+    color: rgb(0, 0, 0);
+}
+
+nav .icon {
+    display: none;
+}
+
+.btn {
+    margin-top: 16px;
+    border: none;
+    padding: 12px;
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive { position: relative; }
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.glowingTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glowingTitle 1s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive { position: relative; }
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@-webkit-keyframes glowingTitle {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+  }
+
+  .divol{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+a:hover {
+    background-color: #3333;
+    color: rgb(0, 0, 0);
+}
+
+  .ol{
+
+  }
+
+  .footer {
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer h1 {
+    font-size: 1em;
+    margin-bottom: 1px;
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+    footer h1 {
+      font-size: 1.5em;
+    }
+  }
+  
+  

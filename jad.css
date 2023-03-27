@@ -1,0 +1,91 @@
+.glowingTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glowingTitle 1s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive { position: relative; }
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@-webkit-keyframes glowingTitle {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.table {
+			border-collapse: collapse;
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+            text-align: center;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		/* Membuat tampilan kolom pada layar kecil */
+		@media screen and (max-width: 600px) {
+			table, thead, tbody, th, td, tr {
+				display: block;
+			}
+
+			th {
+				text-align: center;
+			}
+
+			tr {
+				margin-bottom: 10px;
+				border: none;
+			}
+
+			td {
+				border-bottom: 1px solid #ddd;
+				position: relative;
+				padding-left: 50%;
+			}
+
+			td::before {
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				width: 45%;
+				padding-right: 10px;
+				white-space: nowrap;
+				content: attr(data-label);
+				font-weight: bold;
+			}
+		}
